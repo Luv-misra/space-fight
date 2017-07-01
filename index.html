@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mykybo engine</title>
+</head>
+
+<style type="text/css">	
+ canvas {
+     border: 3px solid black;
+ }
+ canvas:hover {
+     cursor: crosshair;
+ }
+ body {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+</style>
+
+<body onkeydown="myFunction()" onkeyup="nullify()" >
+
+	<!-- <div id="player" style="border:2px solid black; height: 440px; width: 440px;z-index: 100; position: absolute; border-radius: 22px; transition: all 0.1s ease ; background-color: black; " >
+	 -->	
+	</div>
+	<canvas id = "gameCanvas" height ="600px" width="1600px"  style="z-index: 200;" />
+	<img id="1" width="20px" height="27" src="r1.png" alt="The Scream" style="display: none;">
+	<img id="2" width="20px" height="27" src="r2.png" alt="The Scream" style="display: none;">
+	<img id="0" width="20px" height="27" src="r3.png" alt="The Scream" style="display: none;">
+	<img id="s1" width="20px" height="27" src="s1.png" alt="The Scream" style="display: none;">
+	<img id="g1" width="20px" height="27" src="g1.jpg" alt="The Scream" style="display: none;">
+</body>
+</html>
+<script type="text/javascript">
+	
+	var can = document.getElementById("gameCanvas");
+	can.width = window.innerWidth;
+	can.height = window.innerHeight;
+
+</script>
+<script type="text/javascript" src="rocks.js" ></script>
+
+
+
+  
